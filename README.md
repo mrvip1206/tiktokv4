@@ -14,5 +14,6 @@ This uses Vipto.de as a basisi for getting view, like, and followers.
 Python 3 or newer
 
 ## Install Dependency
-pip install selenium
+
+pip install selenium                                                                             
 pip install pyfiglet==0.7.5
