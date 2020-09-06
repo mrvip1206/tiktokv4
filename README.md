@@ -24,6 +24,7 @@ pip install pyfiglet==0.7.5</pre>
 2. Make sure all depedencies are installed
 2. Open tiktokv4 using a **Code Editor** and edit line 
 <pre>vidUrl = "YOUR_URL" #Change YOUR_URL to your Tik Tok video URL
+username = "YOUR_USERNAME" #Change YOUR_USERNAME to your Tik Tok username
 auto = 1 #Read comment above this line for more info</pre>
 
 ## Few things
