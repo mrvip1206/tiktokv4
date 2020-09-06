@@ -160,7 +160,7 @@ def loop3():
     hearts()
 """
 
-vidUrl = "@nicholasstankiewicz" #Change YOUR_URL to your Tik Tok video URL. This URL used to get views or hearts or both.
+vidUrl = "YOUR_URL" #Change YOUR_URL to your Tik Tok video URL. This URL used to get views or hearts or both.
 username = "YOUR_USERNAME" #Change YOUR_USERNAME to your Tik Tok username
 
 system("cls")
