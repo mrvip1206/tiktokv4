@@ -26,6 +26,11 @@ pip install pyfiglet==0.7.5</pre>
 <pre>vidUrl = "YOUR_URL" #Change YOUR_URL to your Tik Tok video URL
 auto = 1 #Read comment above this line for more info</pre>
 
+## Few things
+1. Use RDP to get tons of views or fans (run 24/7)
+2. If you are using Chrome ver 84, you don't need to download chromedriver again (won't cause error). But, if you are not using Chrome ver 84, then download the right version like your Chrome version. [**Download here**](https://chromedriver.chromium.org/downloads)
+3. If the website update like removed one or some features, just change the auto value. e.g If the website removed auto views, you can use auto hearts features only, don't use value = 1 or value = 3
+
 ## Special thanks
 1. Thanks to https://vipto.de/ for providing great free service like this
 2. People who ask for and recommend this website
