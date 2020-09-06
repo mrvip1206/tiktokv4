@@ -2,7 +2,7 @@
 
 This is a modification of https://github.com/kangoka/tiktodv3 adding followers to the script
 
-This uses Vipto.de as a basis for getting view, like, and followers.
+This uses Vipto.de as a basis for getting views, likes, and followers.
 
 *-10 followers per 2 minutes*
 
