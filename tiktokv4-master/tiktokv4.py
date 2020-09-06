@@ -69,31 +69,33 @@ def loop2():
         loop2()
 
 def loop4():
-    global i
-    time.sleep(10)
+    time.sleep(60)
     try:
-        driver.find_element_by_xpath("/html/body/div[3]/div[1]/div[3]/div/div[1]/div/button").click()
+        driver.find_element_by_xpath("/html/body/main/div/div/div[2]/div/div[1]/div[3]/div/div/button").click()
     except:
-        print("You didn't solve the captcha yet. Need to refresh to avoid endless loop.")
-        driver.refresh()
+        print("You didn't solve the captcha yet")
         loop4()
+    time.sleep(2)
     try:
-        time.sleep(2)
-        driver.find_element_by_xpath("/html/body/div[3]/div[1]/div/div/div/form/div/input").send_keys(vidUrl)
-        time.sleep(1)
-        driver.find_element_by_xpath("/html/body/div[3]/div[1]/div/div/div/form/div/div/button").click()
-        time.sleep(2)
-        driver.find_element_by_xpath("/html/body/div[3]/div[1]/div/div/div/div/div/div[1]/div/form/button").click()
-        driver.refresh()
-        i += 1
-        total = i * 10
-        print("Followers success delivered! Total", total,"followers")
-        time.sleep(50)
-        loop4()
+        driver.find_element_by_xpath("/html/body/main/div/div/div[2]/form/div/input").send_keys(username)
     except:
-        print("An error occurred. Now will retry again")
+        print("Delay")
         driver.refresh()
         loop4()
+    time.sleep(2)
+    driver.find_element_by_xpath('//button[@type="submit"]').click()
+    time.sleep(2)
+    try:
+        driver.find_element_by_xpath("/html/body/main/div/div/div[2]/div/button").click()
+    except:
+        print("Either failed to input or can't find the button. Need to retry")
+        driver.refresh()
+        loop4()
+    time.sleep(2)
+    print("Fans success delivered!")
+    driver.refresh()
+    time.sleep(250)
+    loop4()
         
 """
 def loop3():
@@ -158,7 +160,8 @@ def loop3():
     hearts()
 """
 
-vidUrl = "YOUR_URL/USERNAME" #Change YOUR_URL to your Tik Tok video URL. This URL used to get views or hearts or both. For followers, change "YOUR URL" to "@yourusername"
+vidUrl = "@nicholasstankiewicz" #Change YOUR_URL to your Tik Tok video URL. This URL used to get views or hearts or both.
+username = "YOUR_USERNAME" #Change YOUR_USERNAME to your Tik Tok username
 
 system("cls")
 tiktod = pyfiglet.figlet_format("TIKTOD V4", font="slant")
